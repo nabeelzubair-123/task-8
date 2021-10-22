@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>QUESTION 8</title>
+</head>
+
+<body>
+    <script>
+        today = new Date();
+        var independenceDay = new Date(today.getFullYear(), 7, 14);
+        if (today.getMonth() == 11 && today.getDate() > 14) {
+            independenceDay.setFullYear(independenceDay.getFullYear() + 1);
+        }
+        var one_day = 1000 * 60 * 60 * 24;
+        document.write(Math.ceil((independenceDay.getTime() - today.getTime()) / (one_day)) +
+            " days left until 14th August!");
+    </script>
+</body>
+
+</html>
